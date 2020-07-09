@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="12sp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@drawable/card_1"
+        >
+
+
+        <TextView
+            android:id="@+id/cc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resturent"
+            android:textSize="20sp"
+            android:fontFamily="@font/baloo"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/cc_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/burgerking"
+            android:layout_alignParentTop="true"
+            ></ImageView>
+
+        <RatingBar
+            android:id="@+id/cc_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@id/cc_title"
+            android:layout_marginLeft="10dp"
+            android:rating="4"
+            ></RatingBar>
+
+        <TextView
+            android:id="@+id/cc_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdfsdfsdf sadfsdfsdf sdfs sadfsad"
+            android:layout_below="@id/cc_rating"
+            android:layout_toLeftOf="@+id/cc_image"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
